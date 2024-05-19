@@ -1,0 +1,9 @@
+aws:
+  region: 'your-aws-region'
+  access_key: 'your-access-key'
+  secret_key: 'your-secret-key'
+
+neo4j:
+  uri: 'bolt://localhost:7687'
+  user: 'neo4j'
+  password: 'password'
