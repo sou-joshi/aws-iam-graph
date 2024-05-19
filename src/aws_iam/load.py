@@ -8,7 +8,7 @@ def load_to_neo4j(nodes, relationships):
         conn.query(query, parameters={})
     
     for rel in relationships:
-        query = f"MATCH (a:{rel['from_type']} {{id: '{rel['from_id']}'}}), (b:{rel['to_type']} {{id: '{rel['to_id']}'}}) CREATE (a)-[r:{rel['type']}]->(b)"
+        query = f"MATCH (a:{rel['from_type']} {{name: '{rel['from_id']}'}}), (b:{rel['to_type']} {{name: '{rel['to_id']}'}}) CREATE (a)-[r:{rel['type']}]->(b)"
         conn.query(query, parameters={})
 
     conn.close()
