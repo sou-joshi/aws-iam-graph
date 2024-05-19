@@ -1,13 +1,13 @@
 # AWS IAM Graph Visualizer
 
-A Python based visualizer that uses Graph DB in the backed to Visualize the Account/User level roles and policies.
+This project analyzes all IAM components within an AWS account and their linkages to other services and components. It visualizes these relationships in a graph using Neo4j.
 
 ## Key Features
 
-* Python Based
-* Browser based Visualization
-* Cross platform
-  - Windows, macOS and Linux ready.
+- Extract IAM data using Boto3
+- Model IAM relationships as a graph
+- Visualize the graph in Neo4j
+- Provide insights into IAM policies, roles, users, and their permissions
 
 ## How To Use
 
